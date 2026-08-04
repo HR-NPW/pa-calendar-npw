@@ -2,18 +2,22 @@
 <html lang="th">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
   <title>ปฏิทินการประเมิน PA</title>
   <style>
     html, body {
+      margin: 0;
+      padding: 0;
       height: 100%;
+      overflow: hidden;
     }
     iframe {
-      width: 100%;
-      height: 100vh;   /* fallback สำหรับเบราว์เซอร์ที่ไม่รู้จัก dvh */
-      height: 100dvh;  /* ปรับความสูงตามพื้นที่จอที่มองเห็นจริง */
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100dvh;
       border: none;
-      display: block;
     }
   </style>
 </head>
